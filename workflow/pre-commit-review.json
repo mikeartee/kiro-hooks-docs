@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Pre-Commit Review",
+  "description": "Manually trigger a review of staged changes before committing — checks for common issues",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Run a pre-commit review on the current git staged changes. Check for: (1) console.log, print, or debug statements left in production code, (2) TODO or FIXME comments that represent unfinished work, (3) hardcoded secrets, API keys, or credentials, (4) obvious logic errors or missing error handling in changed functions, (5) test files that should have been updated alongside source changes. Report findings grouped by severity. Do not make changes automatically — just report what needs attention before committing."
+  }
+}

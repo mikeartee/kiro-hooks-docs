@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Barrel Export Update",
+  "description": "When a new source file is created, check if the directory has an index barrel file and add the export",
+  "version": "1",
+  "when": {
+    "type": "fileCreated",
+    "patterns": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "src/**/*.js",
+      "src/**/*.jsx"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A new source file was just created. Check if the directory it was created in contains an index.ts or index.js barrel file. If it does, add an export for the new file to the barrel (e.g. export * from './newFile' or export { default } from './newFile' depending on what the file exports). If no barrel file exists in that directory, do nothing — do not create one automatically."
+  }
+}

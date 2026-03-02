@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Cleanup Dead Imports",
+  "description": "When a source file is deleted, scan the codebase for imports of that file and flag or remove them",
+  "version": "1",
+  "when": {
+    "type": "fileDeleted",
+    "patterns": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "src/**/*.js",
+      "src/**/*.jsx"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A source file was just deleted. Search the codebase for any import statements that reference the deleted file (by relative path or module name). For each file that imports the deleted module: remove the import statement if the imported symbol is no longer used, or alert the user if the symbol is still referenced so they can provide a replacement. Do not silently leave broken imports behind."
+  }
+}

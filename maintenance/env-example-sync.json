@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Env Example Sync",
+  "description": "When .env is edited, check that .env.example has the same keys (without values)",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      ".env",
+      ".env.local",
+      ".env.development",
+      ".env.production"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A .env file was just edited. Compare its keys against .env.example. If any keys are present in .env but missing from .env.example, add them to .env.example with empty or placeholder values (e.g. YOUR_VALUE_HERE). If any keys were removed from .env, remove them from .env.example too. Never copy actual secret values into .env.example — keys only."
+  }
+}

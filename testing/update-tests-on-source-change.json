@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "name": "Update Tests on Source Change",
+  "description": "When a source file is edited, check if a corresponding test file exists and prompt to update it",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "src/**/*.js",
+      "src/**/*.jsx",
+      "src/**/*.py"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A source file was just edited. Check if a corresponding test file exists (e.g. src/foo.ts → src/foo.test.ts or tests/foo.test.ts). If it does, review the changes made to the source file and update the test file to reflect them: add tests for new functions or branches, update tests for changed signatures, and remove tests for deleted code. If no test file exists yet, do nothing — do not create one automatically."
+  }
+}
