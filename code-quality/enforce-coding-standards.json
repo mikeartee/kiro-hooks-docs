@@ -1,10 +1,13 @@
 {
+  "enabled": true,
   "name": "Enforce Coding Standards",
-  "version": "1.0.0",
   "description": "Verify every write operation follows the project's coding standards before proceeding",
+  "version": "1",
   "when": {
     "type": "postToolUse",
-    "toolTypes": ["write"]
+    "toolTypes": [
+      "write"
+    ]
   },
   "then": {
     "type": "askAgent",

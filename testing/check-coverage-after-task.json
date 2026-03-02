@@ -1,7 +1,8 @@
 {
+  "enabled": true,
   "name": "Check Coverage After Task",
-  "version": "1.0.0",
   "description": "After a spec task completes, run the test suite with coverage and alert if coverage drops below threshold",
+  "version": "1",
   "when": {
     "type": "postTaskExecution"
   },

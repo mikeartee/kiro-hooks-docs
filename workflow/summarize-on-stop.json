@@ -1,7 +1,8 @@
 {
+  "enabled": true,
   "name": "Summarize on Agent Stop",
-  "version": "1.0.0",
   "description": "When the agent finishes a session, summarize what was done and update progress tracking",
+  "version": "1",
   "when": {
     "type": "agentStop"
   },

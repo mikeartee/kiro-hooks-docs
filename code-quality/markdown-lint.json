@@ -1,10 +1,13 @@
 {
+  "enabled": true,
   "name": "Markdown Lint on Save",
-  "version": "1.0.0",
   "description": "Run markdownlint after editing markdown files to catch formatting issues",
+  "version": "1",
   "when": {
     "type": "fileEdited",
-    "patterns": ["**/*.md"]
+    "patterns": [
+      "**/*.md"
+    ]
   },
   "then": {
     "type": "runCommand",

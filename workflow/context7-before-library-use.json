@@ -1,7 +1,8 @@
 {
+  "enabled": true,
   "name": "Context7 Before Library Use",
-  "version": "1.0.0",
   "description": "Before writing code that uses an external library, remind the agent to query Context7 for up-to-date documentation",
+  "version": "1",
   "when": {
     "type": "preTaskExecution"
   },

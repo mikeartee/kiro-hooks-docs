@@ -1,7 +1,8 @@
 {
+  "enabled": true,
   "name": "Gap Analysis Loop",
-  "version": "1.0.0",
   "description": "After each task completes, run two gap analysis passes to verify all requirements are met before marking done",
+  "version": "1",
   "when": {
     "type": "postTaskExecution"
   },

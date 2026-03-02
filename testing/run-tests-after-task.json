@@ -1,7 +1,8 @@
 {
+  "enabled": true,
   "name": "Run Tests After Task",
-  "version": "1.0.0",
   "description": "Automatically run the test suite after a spec task is marked complete",
+  "version": "1",
   "when": {
     "type": "postTaskExecution"
   },

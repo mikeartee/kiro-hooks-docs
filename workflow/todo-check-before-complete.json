@@ -1,7 +1,8 @@
 {
+  "enabled": true,
   "name": "TODO Check Before Task Complete",
-  "version": "1.0.0",
   "description": "Before marking a task complete, scan for TODO, FIXME, and HACK comments left in recently edited files",
+  "version": "1",
   "when": {
     "type": "postTaskExecution"
   },

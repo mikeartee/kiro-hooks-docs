@@ -1,10 +1,16 @@
 {
+  "enabled": true,
   "name": "Sync API Docs",
-  "version": "1.0.0",
   "description": "When route files are edited, check if the API documentation needs updating",
+  "version": "1",
   "when": {
     "type": "fileEdited",
-    "patterns": ["**/routes/**/*.ts", "**/routes/**/*.js", "**/api/**/*.ts", "**/api/**/*.js"]
+    "patterns": [
+      "**/routes/**/*.ts",
+      "**/routes/**/*.js",
+      "**/api/**/*.ts",
+      "**/api/**/*.js"
+    ]
   },
   "then": {
     "type": "askAgent",

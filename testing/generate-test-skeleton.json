@@ -1,10 +1,14 @@
 {
+  "enabled": true,
   "name": "Generate Test Skeleton",
-  "version": "1.0.0",
   "description": "When a new source file is created, generate a matching test file skeleton",
+  "version": "1",
   "when": {
     "type": "fileCreated",
-    "patterns": ["src/**/*.ts", "src/**/*.js"]
+    "patterns": [
+      "src/**/*.ts",
+      "src/**/*.js"
+    ]
   },
   "then": {
     "type": "askAgent",

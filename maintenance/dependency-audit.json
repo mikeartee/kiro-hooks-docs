@@ -1,10 +1,13 @@
 {
+  "enabled": true,
   "name": "Dependency Audit",
-  "version": "1.0.0",
   "description": "When package.json is edited, audit dependencies for known vulnerabilities",
+  "version": "1",
   "when": {
     "type": "fileEdited",
-    "patterns": ["**/package.json"]
+    "patterns": [
+      "**/package.json"
+    ]
   },
   "then": {
     "type": "runCommand",

@@ -1,10 +1,13 @@
 {
+  "enabled": true,
   "name": "Lockfile Sync Check",
-  "version": "1.0.0",
   "description": "When package.json is edited, verify the lockfile is in sync and prompt to run install if needed",
+  "version": "1",
   "when": {
     "type": "fileEdited",
-    "patterns": ["**/package.json"]
+    "patterns": [
+      "**/package.json"
+    ]
   },
   "then": {
     "type": "askAgent",
