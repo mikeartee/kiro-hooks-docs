@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "name": "Lockfile Sync Check",
-  "description": "When package.json is edited, verify the lockfile is in sync and prompt to run install if needed",
+  "description": "When package.json is edited, check if a lockfile exists and warn if it may be out of sync",
   "version": "1",
   "when": {
     "type": "fileEdited",
@@ -10,7 +10,7 @@
     ]
   },
   "then": {
-    "type": "askAgent",
-    "prompt": "package.json was just edited. Check whether the lockfile (package-lock.json or yarn.lock or pnpm-lock.yaml) is still in sync with the updated package.json. If dependencies were added, removed, or version-changed, remind the user to run the appropriate install command (npm install, yarn install, or pnpm install) to update the lockfile. Do not run the install command automatically — just alert the user if it is needed."
+    "type": "runCommand",
+    "command": "node -e \"const fs=require('fs');const locks=['package-lock.json','yarn.lock','pnpm-lock.yaml'];const found=locks.filter(f=>{try{fs.statSync(f);return true}catch{return false}});if(found.length===0){console.log('WARNING: No lockfile found. Run npm install to generate one.')}else{console.log('Lockfile present: '+found.join(', ')+'. Run install if you changed dependencies.')}\""
   }
 }
