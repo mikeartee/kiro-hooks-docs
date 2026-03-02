@@ -1,0 +1,13 @@
+{
+  "name": "Markdown Lint on Save",
+  "version": "1.0.0",
+  "description": "Run markdownlint after editing markdown files to catch formatting issues",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["**/*.md"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "npx markdownlint-cli2 \"**/*.md\" \"#node_modules\""
+  }
+}

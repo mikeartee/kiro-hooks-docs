@@ -1,0 +1,13 @@
+{
+  "name": "Python Lint on Save",
+  "version": "1.0.0",
+  "description": "Run ruff (or flake8 as fallback) after editing Python files to catch issues immediately",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["**/*.py"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "ruff check . || flake8 ."
+  }
+}

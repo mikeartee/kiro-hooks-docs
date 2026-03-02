@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "id": "code-quality",
+      "label": "Code Quality",
+      "description": "Hooks that enforce coding standards, linting, and formatting"
+    },
+    {
+      "id": "testing",
+      "label": "Testing",
+      "description": "Hooks that trigger test generation and test suite execution"
+    },
+    {
+      "id": "documentation",
+      "label": "Documentation",
+      "description": "Hooks that keep docs and API references in sync with code"
+    },
+    {
+      "id": "security",
+      "label": "Security",
+      "description": "Hooks that scan for secrets, vulnerabilities, and unsafe patterns"
+    },
+    {
+      "id": "workflow",
+      "label": "Workflow",
+      "description": "Hooks that automate planning, gap analysis, and progress tracking"
+    },
+    {
+      "id": "maintenance",
+      "label": "Maintenance",
+      "description": "Hooks for dependency audits and on-demand code quality checks"
+    }
+  ]
+}

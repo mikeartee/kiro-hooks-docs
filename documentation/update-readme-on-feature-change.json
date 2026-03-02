@@ -1,0 +1,13 @@
+{
+  "name": "Update README on Feature Change",
+  "version": "1.0.0",
+  "description": "When source files change, check if the README needs updating to reflect new or removed features",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["src/**/*.ts", "src/**/*.js", "src/**/*.py", "lib/**/*.ts", "lib/**/*.js"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A source file was just edited. Review the change and determine if it affects user-facing functionality: new commands, changed configuration options, new exports, or removed features. If the change affects what users need to know, update the README to reflect it. Only update the README if the public-facing behaviour actually changed — do not make unnecessary edits."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Generate Test Skeleton",
+  "version": "1.0.0",
+  "description": "When a new source file is created, generate a matching test file skeleton",
+  "when": {
+    "type": "fileCreated",
+    "patterns": ["src/**/*.ts", "src/**/*.js"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A new source file was just created. Generate a matching test file skeleton in the appropriate test directory. Include describe blocks for each exported function or class, with placeholder it() blocks for the most important test cases. Do not implement the tests yet — just create the structure."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Context7 Before Library Use",
+  "version": "1.0.0",
+  "description": "Before writing code that uses an external library, remind the agent to query Context7 for up-to-date documentation",
+  "when": {
+    "type": "preTaskExecution"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Before implementing this task, identify any external libraries or frameworks you plan to use. For each one, query Context7 to get the current documentation and API reference. Do not rely on training data alone — library APIs change and outdated patterns cause bugs. Only proceed with implementation after confirming the correct API usage from Context7."
+  }
+}

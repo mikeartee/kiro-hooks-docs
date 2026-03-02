@@ -1,0 +1,12 @@
+{
+  "name": "Validate Prerequisites",
+  "version": "1.0.0",
+  "description": "Before starting a task, verify all prerequisites and dependencies are in place",
+  "when": {
+    "type": "preTaskExecution"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Before starting this task, verify the prerequisites are in place. Check: Are the required files and directories present? Are the dependencies installed? Is the environment configured correctly? If any prerequisites are missing, stop and alert the user rather than proceeding with assumptions."
+  }
+}

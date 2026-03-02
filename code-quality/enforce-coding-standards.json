@@ -1,0 +1,13 @@
+{
+  "name": "Enforce Coding Standards",
+  "version": "1.0.0",
+  "description": "Verify every write operation follows the project's coding standards before proceeding",
+  "when": {
+    "type": "postToolUse",
+    "toolTypes": ["write"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review the file you just wrote. Verify it follows the project's coding standards from the steering documents. Check for: proper type annotations, correct error handling, no hardcoded secrets, and consistent naming conventions. If any issues are found, fix them now."
+  }
+}

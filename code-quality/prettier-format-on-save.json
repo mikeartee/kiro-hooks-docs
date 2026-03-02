@@ -1,0 +1,13 @@
+{
+  "name": "Prettier Format on Save",
+  "version": "1.0.0",
+  "description": "Run Prettier to auto-format files after editing to maintain consistent code style",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.json", "**/*.css", "**/*.scss", "**/*.html"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "npx prettier --write \"${file}\""
+  }
+}

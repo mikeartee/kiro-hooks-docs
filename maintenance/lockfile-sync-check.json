@@ -1,0 +1,13 @@
+{
+  "name": "Lockfile Sync Check",
+  "version": "1.0.0",
+  "description": "When package.json is edited, verify the lockfile is in sync and prompt to run install if needed",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["**/package.json"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "package.json was just edited. Check whether the lockfile (package-lock.json or yarn.lock or pnpm-lock.yaml) is still in sync with the updated package.json. If dependencies were added, removed, or version-changed, remind the user to run the appropriate install command (npm install, yarn install, or pnpm install) to update the lockfile. Do not run the install command automatically — just alert the user if it is needed."
+  }
+}

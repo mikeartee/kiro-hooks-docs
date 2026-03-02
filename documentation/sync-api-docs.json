@@ -1,0 +1,13 @@
+{
+  "name": "Sync API Docs",
+  "version": "1.0.0",
+  "description": "When route files are edited, check if the API documentation needs updating",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["**/routes/**/*.ts", "**/routes/**/*.js", "**/api/**/*.ts", "**/api/**/*.js"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A route or API file was just edited. Check if the changes affect the public API surface: new endpoints, changed parameters, modified response shapes, or removed routes. If the API surface changed, update the relevant documentation (README, OpenAPI spec, or API docs) to reflect the changes. Only update docs if the API actually changed — do not make unnecessary edits."
+  }
+}

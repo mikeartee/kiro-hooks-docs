@@ -1,0 +1,12 @@
+{
+  "name": "Changelog Reminder",
+  "version": "1.0.0",
+  "description": "After a spec task completes, remind the agent to add a CHANGELOG entry for the change",
+  "when": {
+    "type": "postTaskExecution"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A task just completed. Check if a CHANGELOG.md exists in the project. If it does, add an entry under the appropriate section (Added, Changed, Fixed, or Removed) describing what was done in this task. Use the format: '- Brief description of the change'. If no CHANGELOG.md exists, skip this step."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Gap Analysis Loop",
+  "version": "1.0.0",
+  "description": "After each task completes, run two gap analysis passes to verify all requirements are met before marking done",
+  "when": {
+    "type": "postTaskExecution"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "MANDATORY GAP ANALYSIS — do not skip this.\n\nFirst pass: Re-read the task requirements. Create a checklist and verify each requirement against your implementation. List any gaps found.\n\nSecond pass: Question your assumptions. Ask yourself: Did I follow all explicit instructions? Did I take any shortcuts? Are there known issues that are actually easy fixes?\n\nIf any gaps are found, fix them before reporting the task as complete. Show your gap analysis work in your response."
+  }
+}
