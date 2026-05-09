@@ -3,7 +3,7 @@
   "name": "Dependency Audit",
   "description": "When package.json is edited, audit dependencies for known vulnerabilities",
   "version": "1.0.0",
-  "tags": [],
+  "tags": ["security", "dependencies", "npm", "maintenance"],
   "when": {
     "type": "fileEdited",
     "patterns": [

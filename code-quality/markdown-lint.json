@@ -3,7 +3,7 @@
   "name": "Markdown Lint on Save",
   "description": "Run markdownlint after editing markdown files to catch formatting issues",
   "version": "1.0.0",
-  "tags": [],
+  "tags": ["markdown", "documentation", "linting"],
   "when": {
     "type": "fileEdited",
     "patterns": [

@@ -3,7 +3,7 @@
   "name": "Lockfile Sync Check",
   "description": "When package.json is edited, check if a lockfile exists and warn if it may be out of sync",
   "version": "1.0.0",
-  "tags": [],
+  "tags": ["maintenance", "npm", "dependencies"],
   "when": {
     "type": "fileEdited",
     "patterns": [

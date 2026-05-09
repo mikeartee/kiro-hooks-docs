@@ -3,7 +3,7 @@
   "name": "Env Example Sync",
   "description": "When .env is edited, check that .env.example has the same keys (without values)",
   "version": "1.0.0",
-  "tags": [],
+  "tags": ["maintenance", "environment", "configuration"],
   "when": {
     "type": "fileEdited",
     "patterns": [

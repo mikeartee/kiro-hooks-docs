@@ -3,7 +3,7 @@
   "name": "Sync API Docs",
   "description": "When route files are edited, check if the API documentation needs updating",
   "version": "1.0.0",
-  "tags": [],
+  "tags": ["documentation", "api", "typescript", "javascript"],
   "when": {
     "type": "fileEdited",
     "patterns": [

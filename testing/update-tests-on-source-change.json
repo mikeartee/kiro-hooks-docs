@@ -3,7 +3,7 @@
   "name": "Update Tests on Source Change",
   "description": "When a source file is edited, check if a corresponding test file exists and prompt to update it",
   "version": "1.0.0",
-  "tags": [],
+  "tags": ["testing", "typescript", "javascript", "python"],
   "when": {
     "type": "fileEdited",
     "patterns": [

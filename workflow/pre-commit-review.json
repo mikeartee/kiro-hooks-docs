@@ -3,7 +3,7 @@
   "name": "Pre-Commit Review",
   "description": "Manually trigger a review of staged changes before committing — checks for common issues",
   "version": "1.0.0",
-  "tags": [],
+  "tags": ["workflow", "git", "code-review"],
   "when": {
     "type": "userTriggered"
   },

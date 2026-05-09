@@ -3,7 +3,7 @@
   "name": "Lint on Save",
   "description": "Run ESLint after editing TypeScript or JavaScript files to catch issues immediately",
   "version": "1.0.0",
-  "tags": [],
+  "tags": ["typescript", "javascript", "eslint", "linting"],
   "when": {
     "type": "fileEdited",
     "patterns": [

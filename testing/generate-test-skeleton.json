@@ -3,7 +3,7 @@
   "name": "Generate Test Skeleton",
   "description": "When a new source file is created, generate a matching test file skeleton",
   "version": "1.0.0",
-  "tags": [],
+  "tags": ["testing", "typescript", "javascript"],
   "when": {
     "type": "fileCreated",
     "patterns": [
