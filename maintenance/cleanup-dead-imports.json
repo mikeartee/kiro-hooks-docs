@@ -2,7 +2,8 @@
   "enabled": true,
   "name": "Cleanup Dead Imports",
   "description": "When a source file is deleted, scan the codebase for imports of that file and flag or remove them",
-  "version": "1",
+  "version": "1.0.0",
+  "tags": [],
   "when": {
     "type": "fileDeleted",
     "patterns": [

@@ -2,7 +2,8 @@
   "enabled": true,
   "name": "Env Example Sync",
   "description": "When .env is edited, check that .env.example has the same keys (without values)",
-  "version": "1",
+  "version": "1.0.0",
+  "tags": [],
   "when": {
     "type": "fileEdited",
     "patterns": [

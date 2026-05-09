@@ -2,7 +2,8 @@
   "enabled": true,
   "name": "Pre-Commit Review",
   "description": "Manually trigger a review of staged changes before committing — checks for common issues",
-  "version": "1",
+  "version": "1.0.0",
+  "tags": [],
   "when": {
     "type": "userTriggered"
   },
